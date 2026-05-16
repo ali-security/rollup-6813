@@ -91,7 +91,7 @@ jobs:
         with:
           args: --cache-control max-age=300,public
         env:
-          FILE: repl-artefacts/repl-artefacts/rollup.browser.js
+          FILE: repl-artefacts/rollup.browser.js
           AWS_REGION: ${{ secrets.AWS_REGION }}
           S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
           S3_KEY: ${{ steps.pr-number.outputs.pr-number }}/rollup.browser.js
@@ -101,7 +101,7 @@ jobs:
         with:
           args: --cache-control max-age=300,public
         env:
-          FILE: repl-artefacts/repl-artefacts/rollup.browser.js.map
+          FILE: repl-artefacts/rollup.browser.js.map
           AWS_REGION: ${{ secrets.AWS_REGION }}
           S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
           S3_KEY: ${{ steps.pr-number.outputs.pr-number }}/rollup.browser.js.map
@@ -111,7 +111,7 @@ jobs:
         with:
           args: --cache-control max-age=300,public
         env:
-          FILE: repl-artefacts/repl-artefacts/bindings_wasm_bg.wasm
+          FILE: repl-artefacts/bindings_wasm_bg.wasm
           AWS_REGION: ${{ secrets.AWS_REGION }}
           S3_BUCKET: ${{ secrets.AWS_S3_BUCKET }}
           S3_KEY: ${{ steps.pr-number.outputs.pr-number }}/bindings_wasm_bg.wasm
